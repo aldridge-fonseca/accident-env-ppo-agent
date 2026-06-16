@@ -4,10 +4,10 @@ This folder contains the PPO results for `AccidentEnv`.
 
 ## Included plots
 
-| ID | Result | File |
-|---|---|---|
-| 15 | Training learning curve | `plots/ID-15_training_learning_curve.png` |
-| 16 | Evaluation performance test | `plots/ID-16_evaluation_performance_test.png` |
+| Result | File |
+|---|---|
+| Training learning curve | `plots/training_learning_curve.png` |
+| Evaluation performance test | `plots/evaluation_performance_test.png` |
 
 ## Evaluation summary
 

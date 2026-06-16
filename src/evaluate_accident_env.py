@@ -70,14 +70,14 @@ plt.text(
     bbox=dict(boxstyle="round", facecolor="wheat", alpha=0.5),
 )
 plt.ylabel("Episodic Reward (Return)")
-plt.title(f"ID-16: Performance Test - AccidentEnv\nLidarObservation | {NUM_EPISODES} Episodes")
+plt.title(f"Performance Test - AccidentEnv\nLidarObservation | {NUM_EPISODES} Episodes")
 plt.xticks([1], ["PPO Agent"])
 plt.grid(True, alpha=0.3, axis="y")
-plot_path = PLOTS_DIR / "ID-16_evaluation_performance_test.png"
+plot_path = PLOTS_DIR / "evaluation_performance_test.png"
 plt.savefig(plot_path, dpi=150, bbox_inches="tight")
 plt.close()
 
-summary_path = PLOTS_DIR / "ID-16_performance_summary.md"
+summary_path = PLOTS_DIR / "performance_summary.md"
 summary_path.write_text(
     "# AccidentEnv PPO performance summary\n\n"
     f"- Episodes: {NUM_EPISODES}\n"

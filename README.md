@@ -6,7 +6,7 @@ Environment attribution: `AccidentEnv` is available at `https://github.com/lilli
 
 ## Overview
 
-This repo focuses on the agent side: training a PPO policy, saving the trained model, and reporting the ID 15 and ID 16 results. The environment itself is treated as an external dependency so the original authors keep clear ownership of their work.
+This repo focuses on the agent side: training a PPO policy, saving the trained model, and reporting training and evaluation results. The environment itself is treated as an external dependency so the original authors keep clear ownership of their work.
 
 ## Task setup
 
@@ -21,10 +21,10 @@ This repo focuses on the agent side: training a PPO policy, saving the trained m
 
 ## Results
 
-| ID | Result | File |
-|---|---|---|
-| 15 | Training learning curve | `results/plots/ID-15_training_learning_curve.png` |
-| 16 | Evaluation performance test | `results/plots/ID-16_evaluation_performance_test.png` |
+| Result | File |
+|---|---|
+| Training learning curve | `results/plots/training_learning_curve.png` |
+| Evaluation performance test | `results/plots/evaluation_performance_test.png` |
 
 ### Performance summary
 
@@ -32,9 +32,9 @@ This repo focuses on the agent side: training a PPO policy, saving the trained m
 |---:|---:|---:|---:|---:|---:|
 | 500 | 14.141 | 3.563 | 16.014 | 1.596 | 17.480 |
 
-![ID 15 training learning curve](results/plots/ID-15_training_learning_curve.png)
+![Training learning curve](results/plots/training_learning_curve.png)
 
-![ID 16 evaluation performance test](results/plots/ID-16_evaluation_performance_test.png)
+![Evaluation performance test](results/plots/evaluation_performance_test.png)
 
 ## Repository structure
 
@@ -57,8 +57,8 @@ accident-env-ppo-agent/
 
 ## Key files
 
-- `src/train_accident_env.py`: Trains the PPO agent and saves the ID 15 training learning curve.
-- `src/evaluate_accident_env.py`: Runs the 500-episode deterministic evaluation and saves the ID 16 evaluation performance plot.
+- `src/train_accident_env.py`: Trains the PPO agent and saves the training learning curve.
+- `src/evaluate_accident_env.py`: Runs the 500-episode deterministic evaluation and saves the evaluation performance plot.
 - `models/ppo_accident_env_final.zip`: Trained PPO checkpoint used for the included evaluation result.
 - `results/README.md`: Lists the included plots and evaluation summary.
 - `docs/environment_source.md`: Points to the original AccidentEnv source repository.

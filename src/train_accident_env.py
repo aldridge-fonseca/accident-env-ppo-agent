@@ -99,10 +99,10 @@ def plot_learning_curve(rewards, window: int = 100):
         plt.plot(np.arange(window - 1, len(rewards)), moving_avg, color="red", linewidth=2, label=f"Moving Avg ({window} episodes)")
     plt.xlabel("Episode")
     plt.ylabel("Episodic Reward (Return)")
-    plt.title("ID-15: Learning Curve - AccidentEnv\nLidarObservation")
+    plt.title("Learning Curve - AccidentEnv\nLidarObservation")
     plt.legend(loc="lower right")
     plt.grid(True, alpha=0.3)
-    plot_path = PLOTS_DIR / "ID-15_training_learning_curve.png"
+    plot_path = PLOTS_DIR / "training_learning_curve.png"
     plt.savefig(plot_path, dpi=150, bbox_inches="tight")
     plt.close()
     return plot_path
