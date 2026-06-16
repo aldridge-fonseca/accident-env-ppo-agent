@@ -73,7 +73,7 @@ plt.ylabel("Episodic Reward (Return)")
 plt.title(f"ID-16: Performance Test - AccidentEnv\nLidarObservation | {NUM_EPISODES} Episodes")
 plt.xticks([1], ["PPO Agent"])
 plt.grid(True, alpha=0.3, axis="y")
-plot_path = PLOTS_DIR / "ID-16_performance_test_opponent_custom_env.png"
+plot_path = PLOTS_DIR / "ID-16_evaluation_performance_test.png"
 plt.savefig(plot_path, dpi=150, bbox_inches="tight")
 plt.close()
 

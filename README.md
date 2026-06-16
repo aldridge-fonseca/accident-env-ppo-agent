@@ -23,8 +23,8 @@ This repo focuses on the agent side: training a PPO policy, saving the trained m
 
 | ID | Result | File |
 |---|---|---|
-| 15 | Learning curve | `results/plots/ID-15_learning_curve_opponent_custom_env.png` |
-| 16 | Performance test | `results/plots/ID-16_performance_test_opponent_custom_env.png` |
+| 15 | Training learning curve | `results/plots/ID-15_training_learning_curve.png` |
+| 16 | Evaluation performance test | `results/plots/ID-16_evaluation_performance_test.png` |
 
 ### Performance summary
 
@@ -32,9 +32,9 @@ This repo focuses on the agent side: training a PPO policy, saving the trained m
 |---:|---:|---:|---:|---:|---:|
 | 500 | 14.141 | 3.563 | 16.014 | 1.596 | 17.480 |
 
-![ID 15 learning curve](results/plots/ID-15_learning_curve_opponent_custom_env.png)
+![ID 15 training learning curve](results/plots/ID-15_training_learning_curve.png)
 
-![ID 16 performance test](results/plots/ID-16_performance_test_opponent_custom_env.png)
+![ID 16 evaluation performance test](results/plots/ID-16_evaluation_performance_test.png)
 
 ## Repository structure
 
@@ -57,8 +57,8 @@ accident-env-ppo-agent/
 
 ## Key files
 
-- `src/train_accident_env.py`: Trains the PPO agent and saves the ID 15 learning curve.
-- `src/evaluate_accident_env.py`: Runs the 500-episode deterministic evaluation and saves the ID 16 performance plot.
+- `src/train_accident_env.py`: Trains the PPO agent and saves the ID 15 training learning curve.
+- `src/evaluate_accident_env.py`: Runs the 500-episode deterministic evaluation and saves the ID 16 evaluation performance plot.
 - `models/ppo_accident_env_final.zip`: Trained PPO checkpoint used for the included evaluation result.
 - `results/README.md`: Lists the included plots and evaluation summary.
 - `docs/environment_source.md`: Points to the original AccidentEnv source repository.

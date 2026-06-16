@@ -102,7 +102,7 @@ def plot_learning_curve(rewards, window: int = 100):
     plt.title("ID-15: Learning Curve - AccidentEnv\nLidarObservation")
     plt.legend(loc="lower right")
     plt.grid(True, alpha=0.3)
-    plot_path = PLOTS_DIR / "ID-15_learning_curve_opponent_custom_env.png"
+    plot_path = PLOTS_DIR / "ID-15_training_learning_curve.png"
     plt.savefig(plot_path, dpi=150, bbox_inches="tight")
     plt.close()
     return plot_path

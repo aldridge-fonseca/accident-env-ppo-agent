@@ -6,8 +6,8 @@ This folder contains the PPO results for `AccidentEnv`.
 
 | ID | Result | File |
 |---|---|---|
-| 15 | Learning curve | `plots/ID-15_learning_curve_opponent_custom_env.png` |
-| 16 | 500-episode performance test | `plots/ID-16_performance_test_opponent_custom_env.png` |
+| 15 | Training learning curve | `plots/ID-15_training_learning_curve.png` |
+| 16 | Evaluation performance test | `plots/ID-16_evaluation_performance_test.png` |
 
 ## Evaluation summary
 
